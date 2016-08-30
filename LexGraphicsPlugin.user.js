@@ -34,7 +34,7 @@ function renderSVGs(item) {
 
     item.parentNode.innerHTML = svg;
   });
-};
+}
 
 function doMagic() {
   $('a[href$="SVG"]').each(function(index) {
