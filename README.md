@@ -1,7 +1,7 @@
 # LexGraphicsPlugin
 Plugin wyświetlający grafiki w systemie LEX
  
-**Dodatek renderuje tylko grafikę w formacie SVG. Zaimplementowanie wyświetlania plików PDF jest na tę chwilę zbyt skomplikowane i/lub niemożliwe "od zewnątrz".**
+**Dodatek renderuje tylko grafikę w formacie SVG. Wyświetlanie plików PDF w tekście ustawy jest zbyt pamięciochłonne i prowadzi do zlagowania przeglądarki.**
 
 ### Instalacja:
 
