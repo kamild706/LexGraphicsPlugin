@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name        Lex.pl Graphics Plugin
 // @namespace   matt23.lex.graphics.plugin
+// @author      Matt23
 // @description Wyświetla grafiki w serwisie Lex
 // @version     1
 // @include     http://*.lex.pl/*
