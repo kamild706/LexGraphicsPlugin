@@ -9,6 +9,7 @@ Plugin wyświetlający grafiki w systemie LEX
 1. W przeglądarce:
   * Mozilla Firefox instalujemy [GreaseMonkey](https://addons.mozilla.org/es/firefox/addon/greasemonkey/)
   * Google Chrome instalujemy [TamperMonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=pl)
+  * Opera instalujemy [TamperMonkey](https://addons.opera.com/es/extensions/details/tampermonkey-beta/?display=en)
 
 2. Następnie instalujemy LexGraphicsPlugin [klikając tutaj](https://github.com/kamild706/LexGraphicsPlugin/raw/master/LexGraphicsPlugin.user.js)
 
