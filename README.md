@@ -10,7 +10,7 @@ Plugin wyświetlający grafiki w systemie LEX
   * Mozilla Firefox instalujemy [GreaseMonkey](https://addons.mozilla.org/es/firefox/addon/greasemonkey/)
   * Google Chrome instalujemy [TamperMonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=pl)
 
-2. Następnie instalujemy LexGraphicsPlugin [klikajac tutaj](https://github.com/kamild706/LexGraphicsPlugin/raw/master/LexGraphicsPlugin.user.js)
+2. Następnie instalujemy LexGraphicsPlugin [klikając tutaj](https://github.com/kamild706/LexGraphicsPlugin/raw/master/LexGraphicsPlugin.user.js)
 
 
 ### Używanie:
@@ -23,4 +23,4 @@ _Plugin na tę chwilę obsługuje tylko grafiki w formacie SVG. Pliki PDF nadal 
 
 #### Mimo naciśnięcia jakiegokolwiek klawisza na klatiaturze nie widać żadnych zmian
 
-_Należy upewnić się, że focus skierowany jest na okno dokumentu, i.e. kliknąć najpierw w dowolne miejsce na stronie._
+_Należy upewnić się, że focus skierowany jest na okno dokumentu, i.e. kliknąć najpierw w dowolne miejsce na stronie. W innym wypadku należy odświeżyć stronę_
