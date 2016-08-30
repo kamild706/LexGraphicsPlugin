@@ -22,6 +22,6 @@ Plugin wyświetlający grafiki w systemie LEX
 #### Załadowały się tylko niektóre z grafik dołączonych do ustawy, pozostałe odnośniki nie uległy przetworzeniu
 _Plugin na tę chwilę obsługuje tylko grafiki w formacie SVG. Pliki PDF nadal muszą być otwarte ręcznie._
 
-#### Mimo naciśnięcia jakiegokolwiek klawisza na klatiaturze nie widać żadnych zmian
+#### Mimo naciśnięcia jakiegokolwiek klawisza na klawiaturze, nie widać żadnych zmian
 
 _Należy upewnić się, że focus skierowany jest na okno dokumentu, i.e. kliknąć najpierw w dowolne miejsce na stronie. W innym wypadku należy odświeżyć stronę_
