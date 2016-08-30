@@ -15,7 +15,7 @@ Plugin wyświetlający grafiki w systemie LEX
 
 
 ### Używanie:
-* Po załadowaniu aktu prawnego wystarczy nacisnąć dowolny przycisk na klawiaturze, a w miejscu w którym znajdował się odnośnik do grafiki w formacie SVG (np. znaków drogowych) pojawi się przetworzona grafika
+* Po załadowaniu aktu prawnego wystarczy nacisnąć dowolny przycisk na klawiaturze, a w miejscu w którym znajdował się odnośnik do grafiki w formacie SVG (np. znaków drogowych w rozporządzeniu o znakach i sygnałach drogowych) pojawi się przetworzona grafika
 
 
 ### Problemy:
