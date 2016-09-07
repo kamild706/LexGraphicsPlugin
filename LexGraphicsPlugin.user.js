@@ -4,8 +4,8 @@
 // @author      Matt23
 // @description Wyświetla grafiki w serwisie Lex
 // @version     1
-// @include     http://*.lex.pl/*
-// @include     https://*.lex.pl/*
+// @include     http://sip.lex.pl/*
+// @include     https://sip.lex.pl/*
 // @grant       none
 // ==/UserScript==
 
