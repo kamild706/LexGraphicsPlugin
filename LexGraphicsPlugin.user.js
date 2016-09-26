@@ -10,8 +10,8 @@
 // ==/UserScript==
 
 function getRandomInt() {
-  max = 10000000;
-  min = 100000;
+  max = 100000000;
+  min = 1000;
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
