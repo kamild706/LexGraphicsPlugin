@@ -4,18 +4,15 @@
 // @author      Matt23
 // @description Wyświetla grafiki w serwisie Lex
 // @version     1
-// @include     http://sip.lex.pl/*
-// @include     https://sip.lex.pl/*
+// @include     http://*.lex.pl/*
+// @include     https://*.lex.pl/*
 // @grant       none
 // ==/UserScript==
 
-function getRandomInt() {
-  max = 100000000;
-  min = 1000;
-  return Math.floor(Math.random() * (max - min)) + min;
-}
+var num = 1;
 
-function modifyCssRules(className, content) {
+
+function addCssRules(className, content) {
   re = /(\.\w+\s{)/g;
   return content.replace(re, "." + className + ' $1');
 }
@@ -27,21 +24,17 @@ function extractSVG(data) {
 function renderSVGs(item) {
   $.get(item.href, function(data) {
     content = extractSVG(data);
-    className = 'graphicsRender' + getRandomInt();
+    className = 'graphicsRender' + num++;
 
     item.parentNode.className += ' ' + className;
-    svg = modifyCssRules(className, content);
+    svg = addCssRules(className, content);
 
     item.parentNode.innerHTML = svg;
   });
 }
 
-function doMagic() {
+document.addEventListener("keypress", function(event) {
   $('a[href$="SVG"]').each(function(index) {
     renderSVGs(this);
   });
-}
-
-document.addEventListener("keypress", function(event) {
-    doMagic();
 });
