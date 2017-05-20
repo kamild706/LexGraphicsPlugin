@@ -3,7 +3,7 @@
 // @namespace   matt23.lex.graphics.plugin
 // @author      Matt23
 // @description Wyświetla grafiki w serwisie Lex
-// @version     1
+// @version     2
 // @include     http://sip.lex.pl/*
 // @include     https://sip.lex.pl/*
 // @grant       none
@@ -34,7 +34,7 @@ function renderSVGs(item) {
 }
 
 document.addEventListener("keypress", function(event) {
-  $('a[href$="SVG"]').each(function(index) {
+  $('a[href$="svg" i]').each(function(index) {
     renderSVGs(this);
   });
 });
