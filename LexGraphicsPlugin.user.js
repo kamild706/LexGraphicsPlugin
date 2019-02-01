@@ -3,38 +3,34 @@
 // @namespace   matt23.lex.graphics.plugin
 // @author      Matt23
 // @description Wyświetla grafiki w serwisie Lex
-// @version     2
+// @version     3
 // @include     http://sip.lex.pl/*
 // @include     https://sip.lex.pl/*
 // @grant       none
 // ==/UserScript==
 
-var num = 1;
+let pictureNumber = 1;
 
-
-function addCssRules(className, content) {
-  re = /(\.\w+\s{)/g;
-  return content.replace(re, "." + className + ' $1');
-}
-
-function extractSVG(data) {
-  return data.substring(data.indexOf('<svg'));
-}
-
-function renderSVGs(item) {
-  $.get(item.href, function(data) {
-    content = extractSVG(data);
-    className = 'graphicsRender' + num++;
-
-    item.parentNode.className += ' ' + className;
-    svg = addCssRules(className, content);
-
-    item.parentNode.innerHTML = svg;
-  });
-}
-
-document.addEventListener("keypress", function(event) {
-  $('a[href$="svg" i]').each(function(index) {
-    renderSVGs(this);
-  });
+document.addEventListener('keypress', event => {
+    const svgElements = document.querySelectorAll('a[href$="svg"]');
+    for (const element of svgElements) {
+        fetch(element.href)
+            .then(response => response.text())
+            .then(content => extractSVGpart(content))
+            .then(svg => {
+                const svgClass = `myGraphics${pictureNumber++}`;
+                element.parentNode.className += ` ${svgClass}`;
+                return appendCssRules(svg, svgClass);
+            })
+            .then(svg => element.parentNode.innerHTML = svg);
+    }
 });
+
+async function extractSVGpart(content) {
+    return content.substring(content.indexOf('<svg'));
+}
+
+async function appendCssRules(svg, svgClass) {
+    const re = /(\.\w+\s{)/g;
+    return svg.replace(re, `.${svgClass} $1`);
+}
